@@ -24,32 +24,115 @@ with open(path + "Test_BTC_EUR_kraken.log") as f:
 print(stance_0, stance_1, stance_2)
 
 ## get the orderid
-
+orderid = ""
+side = ""
+comm_to_open = ""
+comm_to_close = ""
+cost_to_open = 0.0
+comm_to_close = 0.0
+qty = 0.0
+entry_price = 0.0
+exit_price = 0.0
+mark_price = 0.0
+cash = 0.0
+currency = ""
+can_trade = ""
+symbol_trading = ""
+exchange = ""
+equity = 0.0
+leverage = 0
 with open(path + "MA-1-21_XRP_USD_kraken.log") as f:
     for num, line in enumerate(f, 1):
         if "'orderid'" in line:
             for x in line.split(","):
                 if "orderid" in x:
-                    tmp_orderid = x.split(":")[1].replace(" ", "")
+                    tmp = x.split(":")[1].replace(" ", "")
                     start_num = 1
-                    end_num = len(tmp_orderid) - 1
-                    orderid = tmp_orderid[start_num:end_num]
-        # if "'side'" in line:
-        #     for x in line.split(","):
-        #         if "side" in x:
-        #             tmp_side = x.split(":")[1].replace(" ", "")
-        #             start_num = 1
-        #             end_num = len(tmp_side) - 1
-        #             side = tmp_side[start_num:end_num]
-        #             print side
-        # if "'side'" in line:
-        #     for x in line.split(","):
-        #         if "side" in x:
-        #             tmp_side = x.split(":")[1].replace(" ", "")
-        #             start_num = 1
-        #             end_num = len(tmp_side) - 1
-        #             side = tmp_side[start_num:end_num]
-        #             print side
+                    end_num = len(tmp) - 1
+                    orderid = tmp[start_num:end_num]
+                if "side" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 1
+                    end_num = len(tmp) - 1
+                    side = tmp[start_num:end_num]
+                if "comm_to_open" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    comm_to_open = tmp[start_num:end_num]
+                if "comm_to_close" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    comm_to_close = tmp[start_num:end_num]
+                if "cost_to_open" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    cost_to_open = tmp[start_num:end_num]
+                if "cost_to_close" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    cost_to_close = tmp[start_num:end_num]
+                if "qty" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    qty = tmp[start_num:end_num]
+                if "entry_price" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    entry_price = tmp[start_num:end_num]
+                if "exit_price" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    exit_price = tmp[start_num:end_num]
+                if "mark_price" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    mark_price = tmp[start_num:end_num]
+                if "cash" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    cash = tmp[start_num:end_num]
+                if "currency" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 1
+                    end_num = len(tmp) - 1
+                    currency = tmp[start_num:end_num]
+                if "can_trade" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    can_trade = tmp[start_num:end_num]
+                if "symbol_trading" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 1
+                    end_num = len(tmp) - 1
+                    symbol_trading = tmp[start_num:end_num]
+                if "exchange" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 1
+                    end_num = len(tmp) - 1
+                    exchange = tmp[start_num:end_num]
+                if "equity" in x:
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp)
+                    equity = tmp[start_num:end_num]
+                if "leverage" in x:
+                    print x
+                    tmp = x.split(":")[1].replace(" ", "")
+                    start_num = 0
+                    end_num = len(tmp) - 2
+                    leverage = tmp[start_num:end_num]
+
+print (leverage)
 
 
 
