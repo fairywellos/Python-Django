@@ -1,0 +1,333 @@
+2019-06-08 00:01:54,495 INFO Connecting to kraken TEST platform
+2019-06-08 00:01:54,498 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-08 00:01:54,972 INFO State file MA-1-21_BCH_USD_kraken does not exist creating new one
+2019-06-08 00:01:55,441 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-08 00:01:59,471 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-06-08 00:01:59,959 INFO Strategy signal needed to trade, aborting...
+2019-06-08 00:01:59,959 INFO Refreshing order book for BCH/USD
+2019-06-08 00:02:03,460 INFO Strategy equity is USD 100000.000000 (0.000000%)
+2019-06-08 00:02:03,460 INFO State has been saved
+2019-06-09 00:01:48,699 INFO Connecting to kraken TEST platform
+2019-06-09 00:01:48,701 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-09 00:01:48,701 INFO State has been loaded
+2019-06-09 00:01:49,176 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-09 00:01:53,492 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-06-09 00:01:53,963 INFO Full strategy signal needed before first trade
+2019-06-09 00:01:53,963 INFO Refreshing order book for BCH/USD
+2019-06-09 00:01:57,460 INFO Strategy equity is USD 100000.000000 (0.000000%)
+2019-06-09 00:01:57,460 INFO State has been saved
+2019-06-10 00:01:53,490 INFO Connecting to kraken TEST platform
+2019-06-10 00:01:53,493 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-10 00:01:53,493 INFO State has been loaded
+2019-06-10 00:01:53,963 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-10 00:01:58,136 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-06-10 00:01:58,607 INFO Full strategy signal needed before first trade
+2019-06-10 00:01:58,607 INFO Refreshing order book for BCH/USD
+2019-06-10 00:02:02,096 INFO Strategy equity is USD 100000.000000 (0.000000%)
+2019-06-10 00:02:02,096 INFO State has been saved
+2019-06-11 00:01:53,391 INFO Connecting to kraken TEST platform
+2019-06-11 00:01:53,393 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-11 00:01:53,394 INFO State has been loaded
+2019-06-11 00:01:53,962 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-11 00:01:58,257 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-06-11 00:01:58,745 INFO Full strategy signal needed before first trade
+2019-06-11 00:01:58,745 INFO Refreshing order book for BCH/USD
+2019-06-11 00:02:02,231 INFO Strategy equity is USD 100000.000000 (0.000000%)
+2019-06-11 00:02:02,232 INFO State has been saved
+2019-06-12 00:01:49,596 INFO Connecting to kraken TEST platform
+2019-06-12 00:01:49,599 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-12 00:01:49,599 INFO State has been loaded
+2019-06-12 00:01:50,068 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-12 00:01:54,024 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-06-12 00:01:54,484 INFO Full strategy signal needed before first trade
+2019-06-12 00:01:54,484 INFO Refreshing order book for BCH/USD
+2019-06-12 00:01:57,962 INFO Strategy equity is USD 100000.000000 (0.000000%)
+2019-06-12 00:01:57,962 INFO State has been saved
+2019-06-13 00:14:20,301 INFO Connecting to kraken TEST platform
+2019-06-13 00:14:20,304 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-13 00:14:20,304 INFO State has been loaded
+2019-06-13 00:14:20,768 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-13 00:14:24,929 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-06-13 00:14:25,406 INFO Full strategy signal needed before first trade
+2019-06-13 00:14:25,407 INFO Refreshing order book for BCH/USD
+2019-06-13 00:14:28,881 INFO Strategy equity is USD 100000.000000 (0.000000%)
+2019-06-13 00:14:28,882 INFO State has been saved
+2019-06-14 00:02:08,287 INFO Connecting to kraken TEST platform
+2019-06-14 00:02:08,290 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-14 00:02:08,290 INFO State has been loaded
+2019-06-14 00:02:08,756 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-14 00:02:12,734 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-06-14 00:02:13,195 INFO Full strategy signal needed before first trade
+2019-06-14 00:02:13,195 INFO Refreshing order book for BCH/USD
+2019-06-14 00:02:16,671 INFO Strategy equity is USD 100000.000000 (0.000000%)
+2019-06-14 00:02:16,671 INFO State has been saved
+2019-06-14 19:23:26,642 INFO Connecting to kraken TEST platform
+2019-06-14 19:23:26,646 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-14 19:23:26,647 INFO State has been loaded
+2019-06-14 19:23:27,597 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-14 19:23:31,934 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-06-14 19:23:33,937 INFO Full strategy signal needed before first trade
+2019-06-14 19:23:33,937 INFO Refreshing order book for BCH/USD
+2019-06-14 19:23:37,929 INFO Strategy equity is USD 100000.000000 (0.000000%)
+2019-06-14 19:23:37,930 INFO State has been saved
+2019-06-15 00:01:14,435 INFO Connecting to kraken TEST platform
+2019-06-15 00:01:14,437 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-15 00:01:14,438 INFO State has been loaded
+2019-06-15 00:01:15,213 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-15 00:01:19,301 INFO Stance is 1 from [-1, -1, -1, -1, 1]
+2019-06-15 00:01:19,301 INFO Refreshing order book for BCH/USD
+2019-06-15 00:01:23,111 INFO Placing MARKET order for BCH/USD qty 237.276071
+2019-06-15 00:01:23,909 INFO Filled MARKET order for BCH/USD qty 237.276071 side buy @ 421.700000 leverage 1.000000 slippage 0.059319% orderid PAPER_TRADE cost 100059.319018
+2019-06-15 00:01:24,693 INFO Strategy equity is USD 99690.532685 (-0.309467%)
+2019-06-15 00:01:24,695 INFO State has been saved
+2019-06-15 00:01:24,695 INFO Done
+2019-06-16 00:01:10,308 INFO Connecting to kraken TEST platform
+2019-06-16 00:01:10,311 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-16 00:01:10,312 INFO State has been loaded
+2019-06-16 00:01:11,070 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-16 00:01:15,144 INFO Stance is 1 from [-1, -1, -1, 1, 1]
+2019-06-16 00:01:15,900 INFO No trades are needed
+2019-06-16 00:01:15,900 INFO Refreshing order book for BCH/USD
+2019-06-16 00:01:19,673 INFO The open BUY trade has entry @ 421.700000 mark @ 423.200000 unrealised 0.355703%
+2019-06-16 00:01:20,455 INFO Strategy equity is USD 100105.765809 (0.105766%)
+2019-06-16 00:01:20,456 INFO State has been saved
+2019-06-16 00:01:20,456 INFO Done
+2019-06-17 00:01:17,585 INFO Connecting to kraken TEST platform
+2019-06-17 00:01:17,588 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-17 00:01:17,588 INFO State has been loaded
+2019-06-17 00:01:18,385 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-17 00:01:22,410 INFO Stance is 1 from [-1, -1, 1, 1, 1]
+2019-06-17 00:01:23,179 INFO No trades are needed
+2019-06-17 00:01:23,179 INFO Refreshing order book for BCH/USD
+2019-06-17 00:01:26,992 INFO The open BUY trade has entry @ 421.700000 mark @ 427.750000 unrealised 1.434669%
+2019-06-17 00:01:27,747 INFO Strategy equity is USD 101185.371930 (1.185372%)
+2019-06-17 00:01:27,757 INFO State has been saved
+2019-06-17 00:01:27,758 INFO Done
+2019-06-18 00:44:16,191 INFO Connecting to kraken TEST platform
+2019-06-18 00:44:16,197 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-18 00:44:16,197 INFO State has been loaded
+2019-06-18 00:44:16,956 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-18 00:44:22,013 INFO Stance is 1 from [-1, 1, 1, 1, 1]
+2019-06-18 00:44:22,807 INFO No trades are needed
+2019-06-18 00:44:22,807 INFO Refreshing order book for BCH/USD
+2019-06-18 00:44:26,598 INFO The open BUY trade has entry @ 421.700000 mark @ 428.600000 unrealised 1.636234%
+2019-06-18 00:44:27,392 INFO Strategy equity is USD 101387.056590 (1.387057%)
+2019-06-18 00:44:27,394 INFO State has been saved
+2019-06-18 00:44:27,394 INFO Done
+2019-06-19 00:01:35,792 INFO Connecting to kraken TEST platform
+2019-06-19 00:01:35,795 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-19 00:01:35,795 INFO State has been loaded
+2019-06-19 00:01:36,554 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-19 00:01:40,745 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-19 00:01:41,501 INFO No trades are needed
+2019-06-19 00:01:41,501 INFO Refreshing order book for BCH/USD
+2019-06-19 00:01:45,365 INFO The open BUY trade has entry @ 421.700000 mark @ 414.250000 unrealised -1.766659%
+2019-06-19 00:01:46,123 INFO Strategy equity is USD 97982.144976 (-2.017855%)
+2019-06-19 00:01:46,125 INFO State has been saved
+2019-06-19 00:01:46,125 INFO Done
+2019-06-20 00:01:36,159 INFO Connecting to kraken TEST platform
+2019-06-20 00:01:36,165 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-20 00:01:36,165 INFO State has been loaded
+2019-06-20 00:01:36,943 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-20 00:01:41,012 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-20 00:01:41,766 INFO No trades are needed
+2019-06-20 00:01:41,766 INFO Refreshing order book for BCH/USD
+2019-06-20 00:01:45,575 INFO The open BUY trade has entry @ 421.700000 mark @ 416.350000 unrealised -1.268674%
+2019-06-20 00:01:46,337 INFO Strategy equity is USD 98480.424724 (-1.519575%)
+2019-06-20 00:01:46,338 INFO State has been saved
+2019-06-20 00:01:46,338 INFO Done
+2019-06-21 00:14:22,804 INFO Connecting to kraken TEST platform
+2019-06-21 00:14:22,808 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-21 00:14:22,808 INFO State has been loaded
+2019-06-21 00:14:23,595 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-21 00:14:27,796 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-21 00:14:28,572 INFO No trades are needed
+2019-06-21 00:14:28,573 INFO Refreshing order book for BCH/USD
+2019-06-21 00:14:32,373 INFO The open BUY trade has entry @ 421.700000 mark @ 415.200000 unrealised -1.541380%
+2019-06-21 00:14:33,152 INFO Strategy equity is USD 98207.557243 (-1.792443%)
+2019-06-21 00:14:33,154 INFO State has been saved
+2019-06-21 00:14:33,154 INFO Done
+2019-06-22 00:01:48,472 INFO Connecting to kraken TEST platform
+2019-06-22 00:01:48,478 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-22 00:01:48,479 INFO State has been loaded
+2019-06-22 00:01:49,259 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-22 00:01:53,445 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-22 00:01:54,197 INFO No trades are needed
+2019-06-22 00:01:54,197 INFO Refreshing order book for BCH/USD
+2019-06-22 00:01:57,969 INFO The open BUY trade has entry @ 421.700000 mark @ 439.600000 unrealised 4.244724%
+2019-06-22 00:01:58,725 INFO Strategy equity is USD 103997.093368 (3.997093%)
+2019-06-22 00:01:58,728 INFO State has been saved
+2019-06-22 00:01:58,728 INFO Done
+2019-06-23 00:01:44,501 INFO Connecting to kraken TEST platform
+2019-06-23 00:01:44,506 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-23 00:01:44,506 INFO State has been loaded
+2019-06-23 00:01:45,262 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-23 00:01:49,414 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-23 00:01:50,175 INFO No trades are needed
+2019-06-23 00:01:50,175 INFO Refreshing order book for BCH/USD
+2019-06-23 00:01:53,947 INFO The open BUY trade has entry @ 421.700000 mark @ 478.450000 unrealised 13.457434%
+2019-06-23 00:01:54,729 INFO Strategy equity is USD 113215.268715 (13.215269%)
+2019-06-23 00:01:54,730 INFO State has been saved
+2019-06-23 00:01:54,730 INFO Done
+2019-06-24 00:01:47,140 INFO Connecting to kraken TEST platform
+2019-06-24 00:01:47,145 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-24 00:01:47,145 INFO State has been loaded
+2019-06-24 00:01:47,913 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-24 00:01:52,096 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-24 00:01:52,875 INFO No trades are needed
+2019-06-24 00:01:52,875 INFO Refreshing order book for BCH/USD
+2019-06-24 00:01:56,671 INFO The open BUY trade has entry @ 421.700000 mark @ 471.450000 unrealised 11.797486%
+2019-06-24 00:01:57,525 INFO Strategy equity is USD 111554.336220 (11.554336%)
+2019-06-24 00:01:57,537 INFO State has been saved
+2019-06-24 00:01:57,537 INFO Done
+2019-06-25 00:01:44,711 INFO Connecting to kraken TEST platform
+2019-06-25 00:01:44,713 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-25 00:01:44,713 INFO State has been loaded
+2019-06-25 00:01:45,465 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-25 00:01:49,522 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-25 00:01:50,301 INFO No trades are needed
+2019-06-25 00:01:50,302 INFO Refreshing order book for BCH/USD
+2019-06-25 00:01:54,073 INFO The open BUY trade has entry @ 421.700000 mark @ 477.850000 unrealised 13.315153%
+2019-06-25 00:01:54,844 INFO Strategy equity is USD 113072.903073 (13.072903%)
+2019-06-25 00:01:54,845 INFO State has been saved
+2019-06-25 00:01:54,845 INFO Done
+2019-06-26 00:01:45,752 INFO Connecting to kraken TEST platform
+2019-06-26 00:01:45,757 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-26 00:01:45,757 INFO State has been loaded
+2019-06-26 00:01:46,517 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 
+2019-06-26 00:01:50,554 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-26 00:01:51,523 INFO No trades are needed
+2019-06-26 00:01:51,523 INFO Refreshing order book for BCH/USD
+2019-06-26 00:01:55,340 INFO The open BUY trade has entry @ 421.700000 mark @ 476.150000 unrealised 12.912023%
+2019-06-26 00:01:56,117 INFO Strategy equity is USD 112669.533753 (12.669534%)
+2019-06-26 00:01:56,118 INFO State has been saved
+2019-06-26 00:01:56,118 INFO Done
+2019-06-27 00:01:46,018 INFO Connecting to kraken TEST platform
+2019-06-27 00:01:46,023 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-27 00:01:46,023 INFO State has been loaded
+2019-06-27 00:01:46,774 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-06-27 00:01:50,937 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-27 00:01:51,674 INFO No trades are needed
+2019-06-27 00:01:51,674 INFO Refreshing order book for BCH/USD
+2019-06-27 00:01:55,420 INFO The open BUY trade has entry @ 421.700000 mark @ 481.100000 unrealised 14.085843%
+2019-06-27 00:01:56,171 INFO Strategy equity is USD 113844.050303 (13.844050%)
+2019-06-27 00:01:56,174 INFO State has been saved
+2019-06-27 00:01:56,174 INFO Done
+2019-06-28 00:02:54,410 INFO Connecting to kraken TEST platform
+2019-06-28 00:02:54,415 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-28 00:02:54,416 INFO State has been loaded
+2019-06-28 00:02:55,187 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-06-28 00:02:59,395 INFO Stance is -1 from [1, 1, 1, 1, -1]
+2019-06-28 00:03:00,128 INFO Strategy is changing direction
+2019-06-28 00:03:00,863 INFO Placing MARKET order for BCH/USD qty -237.276071
+2019-06-28 00:03:00,864 INFO Refreshing order book for BCH/USD
+2019-06-28 00:03:04,615 INFO Filled MARKET order for BCH/USD qty -237.276071 side sell @ 408.700000 leverage 1.000000 slippage 0.073350% orderid PAPER_TRADE cost 96974.730098
+2019-06-28 00:03:04,616 INFO {'stance': [1, 1, 1, 1, -1], 'orderid': 'PAPER_TRADE', 'side': 'buy', 'comm_to_open': 250.14829754419264, 'comm_to_close': 242.43682524617395, 'cost_to_open': 100059.31901767706, 'cost_to_close': 96974.73009846958, 'qty': 0, 'entry_price': 421.69999999999993, 'exit_price': 408.7, 'mark_price': 481.1, 'cash': 96422.82595800215, 'currency': 'USD', 'can_trade': True, 'symbol_trading': 'BCH/USD', 'exchange': 'kraken', 'equity': 113844.05030252702, 'leverage': 1}
+2019-06-28 00:03:05,356 INFO BUY trade result entry 421.700000 exit 408.700000 ret -3.082760% ret after comm -3.582760% USD cash 96422.825958 USD profit -3577.174042
+2019-06-28 00:03:06,091 INFO Placing MARKET order for BCH/USD qty -235.752631
+2019-06-28 00:03:06,826 INFO Filled MARKET order for BCH/USD qty -235.752631 side sell @ 408.700000 leverage 2.000000 slippage 0.073350% orderid PAPER_TRADE cost 96352.100169
+2019-06-28 00:03:07,600 INFO Placed STOP LOSS for BCH/USD qty 235.752631 side buy @ 418.917500 leverage 2.000000 orderid PAPER_TRADE
+2019-06-28 00:03:11,469 INFO Strategy equity is USD 96111.219918 (-3.888780%)
+2019-06-28 00:03:11,470 INFO State has been saved
+2019-06-28 00:03:11,470 INFO Done
+2019-06-29 00:02:19,373 INFO Connecting to kraken TEST platform
+2019-06-29 00:02:19,376 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-29 00:02:19,376 INFO State has been loaded
+2019-06-29 00:02:20,137 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-06-29 00:02:20,137 INFO Checking if STOP LOSS has triggered
+2019-06-29 00:02:20,137 INFO Refreshing order book for BCH/USD
+2019-06-29 00:02:23,986 INFO Stop loss PAPER_TRADE has triggered with slippage 3.385511%
+2019-06-29 00:02:23,986 INFO {'stance': [1, 1, 1, 1, -1], 'orderid': 'PAPER_TRADE', 'side': 'sell', 'comm_to_open': 240.88025042197728, 'comm_to_close': 255.26116089493118, 'cost_to_open': 96352.10016879092, 'cost_to_close': 102104.46435797247, 'qty': 0, 'entry_price': 408.7, 'exit_price': 433.1, 'mark_price': 481.1, 'cash': 90174.32035750369, 'currency': 'USD', 'can_trade': False, 'symbol_trading': 'BCH/USD', 'exchange': 'kraken', 'equity': 96111.21991836894, 'leverage': 2}
+2019-06-29 00:02:24,716 INFO SELL trade result entry 408.700000 exit 433.100000 ret -11.267606% ret after comm -12.267606% USD cash 90174.320358 USD profit -6248.505600
+2019-06-29 00:02:28,965 INFO Stance is 1 from [1, 1, 1, -1, 1]
+2019-06-29 00:02:29,725 INFO Placing MARKET order for BCH/USD qty 208.206697
+2019-06-29 00:02:30,464 INFO Filled MARKET order for BCH/USD qty 208.206697 side buy @ 433.200000 leverage 1.000000 slippage 0.023089% orderid PAPER_TRADE cost 90195.141027
+2019-06-29 00:02:55,430 INFO Strategy equity is USD 89928.011835 (-10.071988%)
+2019-06-29 00:02:55,431 INFO State has been saved
+2019-06-29 00:02:55,431 INFO Done
+2019-06-30 00:02:08,949 INFO Connecting to kraken TEST platform
+2019-06-30 00:02:08,953 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-30 00:02:08,954 INFO State has been loaded
+2019-06-30 00:02:09,725 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-06-30 00:02:13,791 INFO Stance is 1 from [1, 1, -1, 1, 1]
+2019-06-30 00:02:14,522 INFO No trades are needed
+2019-06-30 00:02:14,523 INFO Refreshing order book for BCH/USD
+2019-06-30 00:02:18,299 INFO The open BUY trade has entry @ 433.200000 mark @ 440.600000 unrealised 1.708218%
+2019-06-30 00:02:19,049 INFO Strategy equity is USD 91489.562061 (-8.510438%)
+2019-06-30 00:02:19,051 INFO State has been saved
+2019-06-30 00:02:19,051 INFO Done
+2019-07-01 00:02:23,362 INFO Connecting to kraken TEST platform
+2019-07-01 00:02:23,365 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-01 00:02:23,366 INFO State has been loaded
+2019-07-01 00:02:53,239 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-01 00:02:57,443 INFO Stance is -1 from [1, -1, 1, 1, -1]
+2019-07-01 00:02:58,211 INFO Strategy is changing direction
+2019-07-01 00:02:58,964 INFO Placing MARKET order for BCH/USD qty -208.206697
+2019-07-01 00:02:58,964 INFO Refreshing order book for BCH/USD
+2019-07-01 00:03:02,737 INFO Filled MARKET order for BCH/USD qty -208.206697 side sell @ 399.200000 leverage 1.000000 slippage 0.050075% orderid PAPER_TRADE cost 83116.113338
+2019-07-01 00:03:02,738 INFO {'stance': [1, -1, 1, 1, -1], 'orderid': 'PAPER_TRADE', 'side': 'buy', 'comm_to_open': 225.48785256794386, 'comm_to_close': 207.7902833451597, 'cost_to_open': 90195.14102717754, 'cost_to_close': 83116.11333806388, 'qty': 0, 'entry_price': 433.2, 'exit_price': 399.19999999999993, 'mark_price': 440.6, 'cash': 82662.01453247693, 'currency': 'USD', 'can_trade': True, 'symbol_trading': 'BCH/USD', 'exchange': 'kraken', 'equity': 91489.56206080168, 'leverage': 1}
+2019-07-01 00:03:03,521 INFO BUY trade result entry 433.200000 exit 399.200000 ret -7.848569% ret after comm -8.348569% cash USD 82662.014532 profit USD -7512.305825
+2019-07-01 00:03:04,256 INFO Placing MARKET order for BCH/USD qty -206.965485
+2019-07-01 00:03:05,030 INFO Filled MARKET order for BCH/USD qty -206.965485 side sell @ 399.200000 leverage 2.000000 slippage 0.050075% orderid PAPER_TRADE cost 82620.621436
+2019-07-01 00:03:05,814 INFO Placed STOP LOSS for BCH/USD qty 206.965485 side buy @ 409.180000 leverage 2.000000 orderid PAPER_TRADE
+2019-07-01 00:03:06,572 INFO Strategy equity is USD 82414.069882 (-17.585930%)
+2019-07-01 00:03:06,573 INFO State has been saved
+2019-07-01 00:03:06,573 INFO Done
+2019-07-02 00:02:08,931 INFO Connecting to kraken TEST platform
+2019-07-02 00:02:08,934 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-02 00:02:08,934 INFO State has been loaded
+2019-07-02 00:02:09,668 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-02 00:02:13,016 INFO Checking if STOP LOSS has triggered
+2019-07-02 00:02:13,746 INFO Stop loss PAPER_TRADE has TRIGGERED @ 409.180000
+2019-07-02 00:02:13,746 INFO {'stance': [1, -1, 1, 1, -1], 'orderid': 'PAPER_TRADE', 'side': 'sell', 'comm_to_open': 206.5515535889133, 'comm_to_close': 211.71534242863612, 'cost_to_open': 82620.62143556532, 'cost_to_close': 84686.13697145444, 'qty': 0, 'entry_price': 399.2, 'exit_price': 409.17999999999995, 'mark_price': 440.6, 'cash': 80178.23210057025, 'currency': 'USD', 'can_trade': False, 'symbol_trading': 'BCH/USD', 'exchange': 'kraken', 'equity': 82414.06988197641, 'leverage': 2}
+2019-07-02 00:02:14,523 INFO SELL trade result entry 399.200000 exit 409.180000 ret -4.878049% ret after comm -5.878049% cash USD 80178.232101 profit USD -2483.782432
+2019-07-02 00:02:15,323 INFO Stance is -1 from [-1, 1, 1, -1, -1]
+2019-07-02 00:02:16,060 INFO Full strategy signal needed before next trade
+2019-07-02 00:02:16,061 INFO Refreshing order book for BCH/USD
+2019-07-02 00:02:19,834 INFO Strategy equity is USD 80178.232101 (-19.821768%)
+2019-07-02 00:02:19,835 INFO State has been saved
+2019-07-03 00:02:49,706 INFO Connecting to kraken TEST platform
+2019-07-03 00:02:49,709 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-03 00:02:49,709 INFO State has been loaded
+2019-07-03 00:02:50,480 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-03 00:02:54,579 INFO Stance is -1 from [1, 1, -1, -1, -1]
+2019-07-03 00:02:55,338 INFO Full strategy signal needed before next trade
+2019-07-03 00:02:55,338 INFO Refreshing order book for BCH/USD
+2019-07-03 00:02:59,107 INFO Strategy equity is USD 80178.232101 (-19.821768%)
+2019-07-03 00:02:59,107 INFO State has been saved
+2019-07-04 00:02:12,963 INFO Connecting to kraken TEST platform
+2019-07-04 00:02:12,968 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-04 00:02:12,969 INFO State has been loaded
+2019-07-04 00:02:13,703 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-04 00:02:17,901 INFO Stance is -1 from [1, -1, -1, -1, -1]
+2019-07-04 00:02:18,638 INFO Full strategy signal needed before next trade
+2019-07-04 00:02:18,638 INFO Refreshing order book for BCH/USD
+2019-07-04 00:02:22,409 INFO Strategy equity is USD 80178.232101 (-19.821768%)
+2019-07-04 00:02:22,410 INFO State has been saved
+2019-07-05 00:02:27,697 INFO Connecting to kraken TEST platform
+2019-07-05 00:02:27,699 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-05 00:02:27,700 INFO State has been loaded
+2019-07-05 00:02:28,434 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-05 00:02:32,629 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-07-05 00:02:33,385 INFO Full strategy signal needed before next trade
+2019-07-05 00:02:33,386 INFO Refreshing order book for BCH/USD
+2019-07-05 00:02:37,143 INFO Strategy equity is USD 80178.232101 (-19.821768%)
+2019-07-05 00:02:37,144 INFO State has been saved
+2019-07-06 00:02:12,244 INFO Connecting to kraken TEST platform
+2019-07-06 00:02:12,250 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-06 00:02:12,251 INFO State has been loaded
+2019-07-06 00:02:13,006 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-06 00:02:17,170 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-07-06 00:02:17,914 INFO Full strategy signal needed before next trade
+2019-07-06 00:02:17,915 INFO Refreshing order book for BCH/USD
+2019-07-06 00:02:21,679 INFO Strategy equity is USD 80178.232101 (-19.821768%)
+2019-07-06 00:02:21,680 INFO State has been saved
+2019-07-07 00:02:07,948 INFO Connecting to kraken TEST platform
+2019-07-07 00:02:07,951 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-07 00:02:07,952 INFO State has been loaded
+2019-07-07 00:02:08,711 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-07 00:02:12,869 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-07-07 00:02:13,687 INFO Full strategy signal needed before next trade
+2019-07-07 00:02:13,688 INFO Refreshing order book for BCH/USD
+2019-07-07 00:02:17,431 INFO Strategy equity is USD 80178.232101 (-19.821768%)
+2019-07-07 00:02:17,433 INFO State has been saved

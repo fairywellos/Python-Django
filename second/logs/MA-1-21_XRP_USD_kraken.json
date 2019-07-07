@@ -1,0 +1,26 @@
+{
+    "stance": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+    ],
+    "orderid": "PAPER_TRADE",
+    "side": "sell",
+    "comm_to_open": 217.4007072643679,
+    "comm_to_close": 227.95990381281246,
+    "cost_to_open": 86960.28290574715,
+    "cost_to_close": 91183.96152512498,
+    "qty": 0,
+    "entry_price": 0.40237649198300224,
+    "exit_price": 0.42191999999999996,
+    "mark_price": 0.46216,
+    "cash": 82626.98271409309,
+    "currency": "USD",
+    "can_trade": false,
+    "symbol_trading": "XRP/USD",
+    "exchange": "kraken",
+    "equity": 82626.98271409309,
+    "leverage": 2
+}

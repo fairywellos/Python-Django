@@ -1,0 +1,24 @@
+2019-06-24 15:47:57,939 INFO Connecting to kraken LIVE platform
+2019-06-24 15:47:57,943 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-24 15:47:57,943 INFO State has been loaded
+2019-06-24 15:47:57,944 INFO Running MA-1-21 strategy on KRAKEN for LTC/USD using initial capital of USD 13500.000000 
+2019-06-24 15:48:10,279 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-24 15:48:13,044 INFO {'info': {'ZUSD': '6784.0034', 'XXBT': '0.1582672200', 'XETH': '24.9997182500', 'USDT': '0.00000001'}, 'USD': {'free': 6784.0034, 'used': 0.0, 'total': 6784.0034}, 'BTC': {'free': 0.15826722, 'used': 0.0, 'total': 0.15826722}, 'ETH': {'free': 24.99971825, 'used': 0.0, 'total': 24.99971825}, 'USDT': {'free': 1e-08, 'used': 0.0, 'total': 1e-08}, 'free': {'USD': 6784.0034, 'BTC': 0.15826722, 'ETH': 24.99971825, 'USDT': 1e-08}, 'used': {'USD': 0.0, 'BTC': 0.0, 'ETH': 0.0, 'USDT': 0.0}, 'total': {'USD': 6784.0034, 'BTC': 0.15826722, 'ETH': 24.99971825, 'USDT': 1e-08}}
+2019-06-24 15:48:13,044 INFO Balance is USD 6784.003400
+2019-06-24 15:48:13,044 INFO Full strategy signal needed before first trade
+2019-06-24 15:48:13,044 INFO Refreshing order book for LTC/USD
+2019-06-24 15:48:16,319 INFO Strategy equity is USD 13489.500000 (-0.077778%)
+2019-06-24 15:48:16,320 INFO State has been saved
+2019-06-24 15:50:52,537 INFO Connecting to kraken LIVE platform
+2019-06-24 15:50:52,539 INFO Connected to kraken using KRAKEN_REST_API
+2019-06-24 15:50:52,540 INFO State has been loaded
+2019-06-24 15:50:52,540 INFO Running MA-1-21 strategy on KRAKEN for LTC/USD using initial capital of USD 13500.000000 
+2019-06-24 15:51:04,912 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-06-24 15:51:07,689 INFO {'info': {'ZUSD': '6784.0034', 'XXBT': '0.1582672200', 'XETH': '24.9997182500', 'USDT': '0.00000001'}, 'USD': {'free': 6784.0034, 'used': 0.0, 'total': 6784.0034}, 'BTC': {'free': 0.15826722, 'used': 0.0, 'total': 0.15826722}, 'ETH': {'free': 24.99971825, 'used': 0.0, 'total': 24.99971825}, 'USDT': {'free': 1e-08, 'used': 0.0, 'total': 1e-08}, 'free': {'USD': 6784.0034, 'BTC': 0.15826722, 'ETH': 24.99971825, 'USDT': 1e-08}, 'used': {'USD': 0.0, 'BTC': 0.0, 'ETH': 0.0, 'USDT': 0.0}, 'total': {'USD': 6784.0034, 'BTC': 0.15826722, 'ETH': 24.99971825, 'USDT': 1e-08}}
+2019-06-24 15:51:07,690 INFO Balance is USD 6784.003400
+2019-06-24 15:51:07,690 INFO No trades are needed
+2019-06-24 15:51:07,691 INFO Refreshing order book for LTC/USD
+2019-06-24 15:51:10,943 INFO The open BUY trade has entry @ 135.115000 mark @ 134.960000 unrealised -0.114717%
+2019-06-24 15:51:10,943 INFO Strategy equity is USD 13496.000000 (-0.029630%)
+2019-06-24 15:51:10,944 INFO State has been saved
+2019-06-24 15:51:10,945 INFO Done

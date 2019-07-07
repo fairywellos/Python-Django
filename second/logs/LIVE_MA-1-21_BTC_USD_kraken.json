@@ -1,0 +1,28 @@
+{
+    "stance": [
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "orderid": "manual",
+    "side": "buy",
+    "comm_to_open": 23.18,
+    "comm_to_close": null,
+    "cost_to_open": 8917.99697,
+    "cost_to_close": null,
+    "qty": 0.780957,
+    "entry_price": 11419.312828,
+    "exit_price": null,
+    "mark_price": 11216.650000000001,
+    "cash": -2417.99697,
+    "currency": "USD",
+    "can_trade": true,
+    "symbol_trading": "BTC/USD",
+    "exchange": "kraken",
+    "leverage": 3,
+    "equity": 6341.724364050002,
+    "stop_id": "OPOGFG-RDLWW-3ZABTF",
+    "stop_price": 7993.5189795999995
+}

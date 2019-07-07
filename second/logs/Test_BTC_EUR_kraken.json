@@ -1,0 +1,24 @@
+{
+    "stance": [
+        0,
+        1,
+        -1,
+        0
+    ],
+    "orderid": null,
+    "side": null,
+    "comm_to_open": null,
+    "comm_to_close": null,
+    "cost_to_open": null,
+    "cost_to_close": null,
+    "qty": 0,
+    "entry_price": null,
+    "exit_price": null,
+    "mark_price": 7261.05,
+    "cash": 50.0,
+    "currency": "EUR",
+    "can_trade": true,
+    "symbol_trading": "BTC/EUR",
+    "exchange": "kraken",
+    "equity": 50.0
+}

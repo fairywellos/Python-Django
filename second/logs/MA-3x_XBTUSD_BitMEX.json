@@ -1,0 +1,26 @@
+{
+    "stance": [
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "orderid": "PAPER_TRADE",
+    "side": "buy",
+    "comm_to_open": -0.022499374478732275,
+    "comm_to_close": null,
+    "cost_to_open": -29.999165971643034,
+    "cost_to_close": null,
+    "qty": 287752,
+    "entry_price": 9592.0,
+    "exit_price": null,
+    "mark_price": 11189.25,
+    "cash": 40.021665346121765,
+    "currency": "BTC",
+    "can_trade": true,
+    "symbol_trading": "XBTUSD",
+    "exchange": "BitMEX",
+    "leverage": 3,
+    "equity": 14.304838927907856
+}

@@ -1,0 +1,11 @@
+2019-06-13 16:19:34,577 INFO Connecting to kraken TEST platform
+2019-06-13 16:19:34,578 INFO Connected to kraken using CCXT_REST_API
+2019-06-13 16:19:34,579 INFO State file Test_BTC_EUR_kraken does not exist creating new one
+2019-06-13 16:19:34,579 INFO Running Test strategy on KRAKEN for BTC/EUR using initial capital of EUR 50.000000 
+2019-06-13 16:19:37,968 INFO *** Forcing *** stance to [ 0  1 -1  0]
+2019-06-13 16:19:37,969 INFO Stance is 0 from [0, 1, -1, 0]
+2019-06-13 16:19:37,969 INFO No trades are needed
+2019-06-13 16:19:37,969 INFO Refreshing order book for BTC/EUR
+2019-06-13 16:19:40,984 INFO Strategy equity is EUR 50.000000 (0.000000%)
+2019-06-13 16:19:40,985 INFO State has been saved
+2019-06-13 16:19:40,985 INFO Done

@@ -1,0 +1,26 @@
+{
+    "stance": [
+        1,
+        1,
+        -1,
+        -1,
+        -1
+    ],
+    "orderid": "OBJBVC-WPGM4-OH4E4N",
+    "side": "sell",
+    "comm_to_open": 19.67,
+    "comm_to_close": 18.91,
+    "cost_to_open": 7026.60878808,
+    "cost_to_close": 7272.5400956628,
+    "qty": 0,
+    "entry_price": 282.0,
+    "exit_price": 291.87,
+    "mark_price": 302.655,
+    "cash": 6747.579233282198,
+    "currency": "USD",
+    "can_trade": false,
+    "symbol_trading": "ETH/USD",
+    "exchange": "kraken",
+    "leverage": 2,
+    "equity": 6747.579233282198
+}

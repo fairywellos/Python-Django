@@ -1,0 +1,26 @@
+{
+    "stance": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+    ],
+    "orderid": "PAPER_TRADE",
+    "side": "sell",
+    "comm_to_open": 197.57797478714966,
+    "comm_to_close": 202.51742415682838,
+    "cost_to_open": 79031.18991485986,
+    "cost_to_close": 81006.96966273135,
+    "qty": 0,
+    "entry_price": 87.97,
+    "exit_price": 90.16924999999999,
+    "mark_price": 99.69999999999999,
+    "cash": 76843.97624220741,
+    "currency": "USD",
+    "can_trade": false,
+    "symbol_trading": "XMR/USD",
+    "exchange": "kraken",
+    "equity": 76843.97624220741,
+    "leverage": 2
+}
