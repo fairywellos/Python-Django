@@ -12,7 +12,7 @@ with open(path + "Test_BTC_EUR_kraken.log") as f:
         if "Stance is " in line:
             start_num = len(line) - 13
             end_num = len(line) -2
-            array_str = line[start_num:end_num].split(",")
+            array_str = line[int(start_num):int(end_num)].split(",")
             print(array_str)
             i = 1
             stance_0 = int(array_str[0].replace(" ", ""))
@@ -23,12 +23,36 @@ with open(path + "Test_BTC_EUR_kraken.log") as f:
 
 print(stance_0, stance_1, stance_2)
 
+## get the orderid
+
+with open(path + "MA-1-21_XRP_USD_kraken.log") as f:
+    for num, line in enumerate(f, 1):
+        if "'orderid'" in line:
+            for x in line.split(","):
+                if "orderid" in x:
+                    tmp_orderid = x.split(":")[1].replace(" ", "")
+                    start_num = 1
+                    end_num = len(tmp_orderid) - 1
+                    orderid = tmp_orderid[start_num:end_num]
+        # if "'side'" in line:
+        #     for x in line.split(","):
+        #         if "side" in x:
+        #             tmp_side = x.split(":")[1].replace(" ", "")
+        #             start_num = 1
+        #             end_num = len(tmp_side) - 1
+        #             side = tmp_side[start_num:end_num]
+        #             print side
+        # if "'side'" in line:
+        #     for x in line.split(","):
+        #         if "side" in x:
+        #             tmp_side = x.split(":")[1].replace(" ", "")
+        #             start_num = 1
+        #             end_num = len(tmp_side) - 1
+        #             side = tmp_side[start_num:end_num]
+        #             print side
 
 
 
-
-test_dic = {}
-print (equity_lastline)
 
 # equity_json = {
 #     "stance": [
