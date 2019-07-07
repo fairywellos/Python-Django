@@ -1,11 +1,11 @@
 path = "../logs/"
 
 ## get equity last line
-today_equity_line = open ( path + "LIVE_MA-1-21_LTC_USD_kraken_equity.log" ,"r" ).readlines()[-1].split(",")
-today_trades_line = open ( path + "LIVE_MA-1-21_LTC_USD_kraken_trades.log" ,"r" ).readlines()[-1].split("\t")
+today_equity_line = open ( path + "MA-1-21_LTC_USD_kraken_equity.log" ,"r" ).readlines()[-1].split(",")
+today_trades_line = open ( path + "MA-1-21_LTC_USD_kraken_trades.log" ,"r" ).readlines()[-1].split("\t")
 
 ## set initial value
-strategy = "LIVE_MA-1-21_LTC_USD"
+strategy = "MA-1-21_LTC_USD"
 date = ""
 quantity = ""
 entry = ""
