@@ -25,5 +25,5 @@ def get_today():
     }
     return result
 
-result = get_today()
-print (result)
+# result = get_today()
+# print (result)
