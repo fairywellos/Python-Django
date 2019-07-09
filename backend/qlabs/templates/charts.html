@@ -7,6 +7,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+        <style>
+            .vertical{
+                writing-mode: tb-rl;
+                margin-top: 200px;
+                padding-left: 50px;
+                font-size: 1.5em;
+                font-family: 'Times New Roman', Times, serif
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -25,10 +34,11 @@
         <div class = "starter-template" style="margin-top: 100px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-1"></div>
+                    <div class="col-sm-1"><p class="vertical">Performance</p></div>
                     <div class="col-sm-10">
                         <canvas id="myChart">
                         </canvas>
+                        <p class="text-center" style="font-family: 'Times New Roman'; font-size:1.5em">Date</p>
                     </div>
                     <div class="col-sm-1"></div>
                 </div>
