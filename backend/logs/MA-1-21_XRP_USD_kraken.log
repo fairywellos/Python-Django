@@ -343,3 +343,12 @@
 2019-07-08 00:01:32,005 INFO Refreshing order book for XRP/USD
 2019-07-08 00:01:36,031 INFO Strategy equity is USD 82626.982714 (-17.373017%)
 2019-07-08 00:01:36,031 INFO State has been saved
+2019-07-09 00:01:18,283 INFO Connecting to kraken TEST platform
+2019-07-09 00:01:18,287 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-09 00:01:18,288 INFO State has been loaded
+2019-07-09 00:01:19,046 INFO Running MA-1-21 strategy on KRAKEN for XRP/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-09 00:01:23,111 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-07-09 00:01:23,861 INFO Full strategy signal needed before next trade
+2019-07-09 00:01:23,861 INFO Refreshing order book for XRP/USD
+2019-07-09 00:01:27,639 INFO Strategy equity is USD 82626.982714 (-17.373017%)
+2019-07-09 00:01:27,640 INFO State has been saved

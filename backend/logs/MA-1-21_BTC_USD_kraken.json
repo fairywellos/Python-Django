@@ -15,10 +15,10 @@
     "qty": 11.701119730665754,
     "entry_price": 8249.2,
     "exit_price": null,
-    "mark_price": 11491.15,
+    "mark_price": 12296.5,
     "cash": -241.89724819203548,
     "currency": "USD",
     "can_trade": true,
-    "equity": 134217.42474484775,
+    "equity": 143640.92151993938,
     "leverage": 1
 }

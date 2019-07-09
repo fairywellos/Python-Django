@@ -15,14 +15,14 @@
     "qty": 0.780957,
     "entry_price": 11419.312828,
     "exit_price": null,
-    "mark_price": 11484.75,
+    "mark_price": 12295.45,
     "cash": -2417.99697,
     "currency": "USD",
     "can_trade": true,
     "symbol_trading": "BTC/USD",
     "exchange": "kraken",
     "leverage": 3,
-    "equity": 6551.09893575,
+    "equity": 7184.220775650001,
     "stop_id": "OPOGFG-RDLWW-3ZABTF",
     "stop_price": 7993.5189795999995
 }

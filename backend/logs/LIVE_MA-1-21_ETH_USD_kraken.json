@@ -1,9 +1,9 @@
 {
     "stance": [
+        -1,
+        -1,
+        -1,
         1,
-        -1,
-        -1,
-        -1,
         1
     ],
     "orderid": "O6AUFC-JZKEN-V3VCJI",
@@ -15,14 +15,14 @@
     "qty": 22.00022573,
     "entry_price": 306.76,
     "exit_price": null,
-    "mark_price": 302.655,
+    "mark_price": 313.435,
     "cash": -18.750011652601643,
     "currency": "USD",
     "can_trade": true,
     "symbol_trading": "ETH/USD",
     "exchange": "kraken",
     "leverage": 1,
-    "equity": 6728.829220867049,
+    "equity": 6876.890740029949,
     "stop_id": "O4X6FE-E6I37-R35FHT",
     "stop_price": 214.73199999999997
 }

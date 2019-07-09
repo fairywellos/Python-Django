@@ -19,12 +19,18 @@ def get_each_LIVE_ETH():
     date = today_equity_line[0].split(" ")[0]
     quantity = today_equity_line[1].replace(" ", "")
     entry = today_equity_line[2].replace(" ", "")
-    last_price = today_trades_line[2]
+
     if "BUY" in today_trades_line[0]:
         buy_or_sell = "Buy"
     else:
         buy_or_sell = "Sell"
-    returns = today_trades_line[3].replace("\n", "")
+
+    if len(today_trades_line) > 2:
+        last_price = today_trades_line[2]
+        returns = today_trades_line[3].replace("\n", "")
+    else:
+        last_price = ""
+        returns = ""
     equity = today_equity_line[6].replace("\n", "").replace(" ", "")
 
     result = {

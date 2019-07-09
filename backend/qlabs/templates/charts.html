@@ -6,17 +6,18 @@
         <title>Charts</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     </head>
     <body>
-        <div class = "starter-template">
+        <div class = "starter-template" style="margin-top: 100px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-6">
-                        <canvas id="myChart" width="400" height="400">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <canvas id="myChart">
                         </canvas>
                     </div>
-                    <div class="col-sm-3"></div>
+                    <div class="col-sm-1"></div>
                 </div>
             </div>
         </div>
@@ -31,7 +32,47 @@
                 method: 'GET',
                 url: endpoint,
                 success: function (data) {
-                    console.log("Success: ", data)
+                    var groups = _.groupBy(data, element => element.strategy);
+                    var ctx = document.getElementById('myChart');
+                    var graph_data = [];
+                    var colors = ['red', 'green', 'blue'];
+
+                    groups = Object.values(groups);
+                    console.log(groups);
+                    for (var i = 0; i < groups.length; i++) {
+                        graph_data.push({
+                            label: groups[i][0].strategy,
+                            data: groups[i].map(element => parseFloat(element.returns)),
+                            lineTension: 0,
+                            fill: false,
+                            borderColor: colors[i]
+                        });
+                    }
+                    console.log(graph_data)
+
+                    var graph_info = {
+                        labels: groups[0].map(element => element.date),
+                        datasets: graph_data,
+                    }
+
+                    var chart_options = {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                boxWidth: 80,
+                                fontColor: 'black'
+                            }
+                        }
+                    }
+
+                    console.log("Graph: ", graph_info)
+
+                    var lineChart = new Chart(ctx, {
+                        type: 'line',
+                        data: graph_info,
+                        options: chart_options
+                    });
                 },
                 error: function (err_data) {
                     console.log(err_data)

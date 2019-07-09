@@ -15,12 +15,12 @@
     "qty": 287752,
     "entry_price": 9592.0,
     "exit_price": null,
-    "mark_price": 11483.75,
+    "mark_price": 12306.75,
     "cash": 40.021665346121765,
     "currency": "BTC",
     "can_trade": true,
     "symbol_trading": "XBTUSD",
     "exchange": "BitMEX",
     "leverage": 3,
-    "equity": 14.96434521985639
+    "equity": 16.64002518929726
 }

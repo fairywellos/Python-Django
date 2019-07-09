@@ -362,3 +362,14 @@
 2019-07-08 00:02:25,550 INFO Strategy equity is USD 76495.171761 (-23.504828%)
 2019-07-08 00:02:25,551 INFO State has been saved
 2019-07-08 00:02:25,551 INFO Done
+2019-07-09 00:02:03,605 INFO Connecting to kraken TEST platform
+2019-07-09 00:02:03,607 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-09 00:02:03,607 INFO State has been loaded
+2019-07-09 00:02:04,351 INFO Running MA-1-21 strategy on KRAKEN for XMR/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-09 00:02:08,486 INFO Stance is 1 from [-1, -1, -1, 1, 1]
+2019-07-09 00:02:09,248 INFO No trades are needed
+2019-07-09 00:02:09,248 INFO Refreshing order book for XMR/USD
+2019-07-09 00:02:13,003 INFO The open BUY trade has entry @ 107.688598 mark @ 101.850000 unrealised -5.421742%
+2019-07-09 00:02:13,738 INFO Strategy equity is USD 72476.718737 (-27.523281%)
+2019-07-09 00:02:13,739 INFO State has been saved
+2019-07-09 00:02:13,739 INFO Done

@@ -488,3 +488,14 @@
 2019-07-08 00:01:25,586 INFO Strategy equity is USD 134217.424745 (34.217425%)
 2019-07-08 00:01:25,589 INFO State has been saved
 2019-07-08 00:01:25,590 INFO Done
+2019-07-09 00:01:07,407 INFO Connecting to kraken TEST platform
+2019-07-09 00:01:07,411 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-09 00:01:07,411 INFO State has been loaded
+2019-07-09 00:01:08,151 INFO Running MA-1-21 strategy on KRAKEN for BTC/USD using initial capital of USD 100000.000000 leverage {1: 2, -1: 2}
+2019-07-09 00:01:12,298 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-07-09 00:01:13,047 INFO No trades are needed
+2019-07-09 00:01:13,047 INFO Refreshing order book for BTC/USD
+2019-07-09 00:01:16,808 INFO The open BUY trade has entry @ 8249.200000 mark @ 12296.500000 unrealised 49.062939%
+2019-07-09 00:01:17,546 INFO Strategy equity is USD 143640.921520 (43.640922%)
+2019-07-09 00:01:17,549 INFO State has been saved
+2019-07-09 00:01:17,549 INFO Done

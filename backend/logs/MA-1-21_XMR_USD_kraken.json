@@ -3,7 +3,7 @@
         -1,
         -1,
         -1,
-        -1,
+        1,
         1
     ],
     "orderid": "PAPER_TRADE",
@@ -15,12 +15,12 @@
     "qty": 715.0272284563823,
     "entry_price": 107.68859836197231,
     "exit_price": null,
-    "mark_price": 99.69999999999999,
+    "mark_price": 101.85,
     "cash": -348.8044809639541,
     "currency": "USD",
     "can_trade": true,
     "symbol_trading": "XMR/USD",
     "exchange": "kraken",
-    "equity": 76495.17176124346,
+    "equity": 72476.71873731859,
     "leverage": 1
 }

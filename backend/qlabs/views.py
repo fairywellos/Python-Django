@@ -10,21 +10,33 @@ from .serializers import LogSerializer
 from .models import Log
 
 from .tables import LogTable
-from django_tables2 import RequestConfig
+from django_tables2 import RequestConfig, MultiTableMixin
+from django.views.generic.base import TemplateView
 
 
-class LogList(APIView):
-    renderer_classes = [TemplateHTMLRenderer]
-    template_name = 'log_list.html'
+# class LogList(APIView):
+#     renderer_classes = [TemplateHTMLRenderer]
+#     template_name = 'log_list.html'
 
-    def get(self, request, format=None):
-        logs = Log.objects.order_by('-id')
+#     def get(self, request, format=None):
+#         logs = Log.objects.order_by('-id')
 
-        queryset = LogTable(logs)
-        RequestConfig(request).configure(queryset)
+#         queryset = LogTable(logs)
+#         RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
 
-        serializer = LogSerializer(queryset, many=True)
-        return Response({'serializer': serializer, 'logs': queryset})
+#         serializer = LogSerializer(queryset, many=True)
+#         return Response({'serializer': serializer, 'logs': queryset})
+
+class LogTablesView(MultiTableMixin, TemplateView):
+    template_name = "log_list.html"
+    logs = Log.objects.order_by('-id')
+    tables = [
+        LogTable(logs, exclude=("id", )),
+        LogTable(logs, exclude=("id", ))
+    ]
+    table_pagination = {
+        'per_page': 10
+    }
 
 class ChartView(View):
     def get(self, request, *args, **kwargs):
@@ -35,7 +47,7 @@ class ChartData(APIView):
     permission_classes = []
 
     def get(self, request, format=None):
-        logs = Log.objects.values()
+        logs = Log.objects.order_by('date').values()
         filtered_logs = []
         for v in logs:
             if re.match('^LIVE', v['strategy']):
@@ -46,7 +58,7 @@ class ChartData(APIView):
 def index(request):
     result = get_today()
     list_values = [ v for v in result.values() ]
-    # print(list_values)
+    print(list_values)
     serializer = LogSerializer(data=list_values, many=True)
 
     if serializer.is_valid():

@@ -340,3 +340,12 @@
 2019-07-08 00:02:32,014 INFO Refreshing order book for BCH/USD
 2019-07-08 00:02:35,785 INFO Strategy equity is USD 80178.232101 (-19.821768%)
 2019-07-08 00:02:35,786 INFO State has been saved
+2019-07-09 00:02:14,505 INFO Connecting to kraken TEST platform
+2019-07-09 00:02:14,509 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-09 00:02:14,509 INFO State has been loaded
+2019-07-09 00:02:15,275 INFO Running MA-1-21 strategy on KRAKEN for BCH/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-09 00:02:19,437 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-07-09 00:02:20,180 INFO Full strategy signal needed before next trade
+2019-07-09 00:02:20,181 INFO Refreshing order book for BCH/USD
+2019-07-09 00:02:23,968 INFO Strategy equity is USD 80178.232101 (-19.821768%)
+2019-07-09 00:02:23,969 INFO State has been saved
