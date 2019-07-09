@@ -16,9 +16,17 @@ equity = ""
 
 ## get each info
 def get_each_BTC_USD():
-    date = today_equity_line[0].split(" ")[0]
+    total_trades = open ( path + "MA-1-21_BTC_USD_kraken_trades.log" ,"r" ).readlines()
+    last_start_date = total_trades[0].split("\t")[0].split(" ")[0]
+    print (last_start_date)
+    for line in total_trades:
+        if len(line.split("\t")) < 3:
+            last_start_date = line.split("\t")[0].split(" ")[0]
+            "**********"
+            print(last_start_date)
     import datetime
-    formated_date = datetime.datetime.strptime(date, "%Y-%d-%m")
+    date = last_start_date
+    formated_date = datetime.datetime.strptime(date, "%Y-%m-%d")
     str_date = formated_date.strftime("%m-%d-%Y")
     date = str_date
     quantity = today_equity_line[1].replace(" ", "")
