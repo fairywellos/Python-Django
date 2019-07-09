@@ -9,6 +9,7 @@ from .LTC import get_each_LTC
 from .XBT import get_each_XBT
 from .XMR import get_each_XMR
 from .XRP import get_each_XRP
+from .test import get_each_Test_BTC
 
 def get_today():
     result = {
@@ -22,6 +23,7 @@ def get_today():
         "XBT": get_each_XBT(),
         "XMR": get_each_XMR(),
         "XRP": get_each_XRP(),
+        "TEST_BTC_EUR": get_each_Test_BTC(),
     }
     return result
 

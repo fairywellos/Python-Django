@@ -28,19 +28,21 @@ from django.views.generic.base import TemplateView
 #         return Response({'serializer': serializer, 'logs': queryset})
 
 class LogTablesView(MultiTableMixin, TemplateView):
+    print("I'm in LogTables")
     template_name = "log_list.html"
 
-    logs_new = Log.objects.exclude(strategy="MA-1-21_BCH_USD").exclude(strategy="MA-1-21_BTC_USD").exclude(strategy="MA-1-21_BTC_USDT").exclude(strategy="MA-1-21_LTC_USD").exclude(strategy="MA-1-21_XMR_USD").exclude(strategy="MA-1-21_XRP_USD").exclude(strategy="MA-3x_XBTUSD").order_by('-id')
+    logs_live = Log.objects.exclude(strategy="MA-1-21_BCH_USD").exclude(strategy="MA-1-21_BTC_USD").exclude(strategy="MA-1-21_BTC_USDT").exclude(strategy="MA-1-21_LTC_USD").exclude(strategy="MA-1-21_XMR_USD").exclude(strategy="MA-1-21_XRP_USD").exclude(strategy="MA-3x_XBTUSD").exclude(strategy="Test_BTC_EUR").order_by('-id')
 
     logs_test = Log.objects.exclude(strategy="LIVE_MA-1-21_LTC_USD").exclude(strategy="LIVE_MA-1-21_ETH_USD").exclude(strategy="LIVE_MA-1-21_BTC_USD").order_by('-id')
 
-    tables = [
-        LogTable(logs_new, exclude=("id", )),
-        LogTable(logs_test, exclude=("id", ))
-    ]
     table_pagination = {
         'per_page': 10
     }
+
+    tables = [
+        LogTable(logs_live, exclude=("id", )),
+        LogTable(logs_test, exclude=("id", ))
+    ]
 
 class ChartView(View):
     def get(self, request, *args, **kwargs):
@@ -67,7 +69,7 @@ def index(request):
 
     if serializer.is_valid():
         serializer.save()
-        return HttpResponseRedirect(redirect_to="../")
+        return HttpResponseRedirect(redirect_to="log_table")
     return HttpResponse("Failed")
 
 # def getData(request):
