@@ -17,7 +17,7 @@ equity = ""
 ## get each info
 def get_each_LIVE_LTC():
     total_trades = open ( path + "LIVE_MA-1-21_LTC_USD_kraken_trades.log" ,"r" ).readlines()
-    last_start_date = today_trades_line[0].split(" ")[0]
+    last_start_date = total_trades[0].split("\t")[0].split(" ")[0]
     print (last_start_date)
     for line in total_trades:
         if len(line.split("\t")) < 3:
