@@ -29,10 +29,14 @@ from django.views.generic.base import TemplateView
 
 class LogTablesView(MultiTableMixin, TemplateView):
     template_name = "log_list.html"
-    logs = Log.objects.order_by('-id')
+
+    logs_new = Log.objects.exclude(strategy="MA-1-21_BCH_USD").exclude(strategy="MA-1-21_BTC_USD").exclude(strategy="MA-1-21_BTC_USDT").exclude(strategy="MA-1-21_LTC_USD").exclude(strategy="MA-1-21_XMR_USD").exclude(strategy="MA-1-21_XRP_USD").exclude(strategy="MA-3x_XBTUSD").order_by('-id')
+
+    logs_test = Log.objects.exclude(strategy="LIVE_MA-1-21_LTC_USD").exclude(strategy="LIVE_MA-1-21_ETH_USD").exclude(strategy="LIVE_MA-1-21_BTC_USD").order_by('-id')
+
     tables = [
-        LogTable(logs, exclude=("id", )),
-        LogTable(logs, exclude=("id", ))
+        LogTable(logs_new, exclude=("id", )),
+        LogTable(logs_test, exclude=("id", ))
     ]
     table_pagination = {
         'per_page': 10
