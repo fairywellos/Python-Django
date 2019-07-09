@@ -70,6 +70,10 @@ def get_total_LIVE_BTC():
 
     # print(datetime_start_equity.date(), datetime_start_trade.date())
 
+    #####################################
+    total_for_each = []
+    result = {}
+    #####################################
     if datetime_start_equity.date() < datetime_start_trade.date():
         i = 1
         while i < len(total_equity):
@@ -101,7 +105,6 @@ def get_total_LIVE_BTC():
             with open(path + "LIVE_MA-1-21_BTC_USD_kraken_trades.log") as f:
                 for num, line in enumerate(f, 1):
                     if str_date in line:
-                        print (line)
                         tmp_trade = line.split("\t")
                         if "BUY" in tmp_trade[0]:
                             buy_or_sell = "Buy"
@@ -113,7 +116,17 @@ def get_total_LIVE_BTC():
                             returns = tmp_trade[3].replace("\n", "")
 
             i += 1      ## increase index
-            print("here is answer", strategy, date, quantity, entry, last_price, buy_or_sell, returns, equity)
+            result = {
+                "strategy": strategy,
+                "date": date,
+                "quantity": quantity,
+                "entry": entry,
+                "last_price": last_price,
+                "buy_or_sell": buy_or_sell,
+                "returns": returns,
+                "equity": equity
+            }
+            # print("here is answer", strategy, date, quantity, entry, last_price, buy_or_sell, returns, equity)
     else:
         i = 0
         while i < len(total_trades):
