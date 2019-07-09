@@ -327,3 +327,14 @@
 2019-07-07 00:02:23,464 INFO Strategy equity is USD 134936.818523 (34.936819%)
 2019-07-07 00:02:23,466 INFO State has been saved
 2019-07-07 00:02:23,467 INFO Done
+2019-07-08 00:02:36,541 INFO Connecting to binance TEST platform
+2019-07-08 00:02:36,547 INFO Connected to binance using BINANCE_REST_API
+2019-07-08 00:02:36,548 INFO State has been loaded
+2019-07-08 00:02:37,309 INFO Running MA-1-21 strategy on BINANCE for BTC/USDT using initial capital of USD 100000.000000 leverage {1: 1, -1: 1}
+2019-07-08 00:02:38,910 INFO Stance is 1 from [1, 1, 1, 1, 1]
+2019-07-08 00:02:39,671 INFO No trades are needed
+2019-07-08 00:02:39,671 INFO Refreshing order book for BTC/USDT
+2019-07-08 00:02:41,047 INFO The open BUY trade has entry @ 8234.950000 mark @ 11443.180000 unrealised 38.958706%
+2019-07-08 00:02:41,780 INFO Strategy equity is USD 138711.221441 (38.711221%)
+2019-07-08 00:02:41,781 INFO State has been saved
+2019-07-08 00:02:41,781 INFO Done

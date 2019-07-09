@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'bootstrap3',
     'django_tables2',
+    'chartjs'
 ]
 
 MIDDLEWARE = [

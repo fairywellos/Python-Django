@@ -304,3 +304,12 @@
 2019-07-07 00:01:53,151 INFO Refreshing order book for LTC/USD
 2019-07-07 00:01:56,901 INFO Strategy equity is USD 85643.407867 (-14.356592%)
 2019-07-07 00:01:56,902 INFO State has been saved
+2019-07-08 00:01:36,775 INFO Connecting to kraken TEST platform
+2019-07-08 00:01:36,779 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-08 00:01:36,780 INFO State has been loaded
+2019-07-08 00:01:37,530 INFO Running MA-1-21 strategy on KRAKEN for LTC/USD using initial capital of USD 100000.000000 leverage {1: 1, -1: 2}
+2019-07-08 00:01:41,807 INFO Stance is -1 from [-1, -1, -1, -1, -1]
+2019-07-08 00:02:10,803 INFO Full strategy signal needed before next trade
+2019-07-08 00:02:10,803 INFO Refreshing order book for LTC/USD
+2019-07-08 00:02:14,551 INFO Strategy equity is USD 85643.407867 (-14.356592%)
+2019-07-08 00:02:14,553 INFO State has been saved

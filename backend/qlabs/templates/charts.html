@@ -1,0 +1,42 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+    <head>
+        <title>Charts</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class = "starter-template">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <canvas id="myChart" width="400" height="400">
+                        </canvas>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="{% static 'js/Chart.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/highcharts/highcharts.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            var endpoint = '/qlabs/chart_data'
+
+            $.ajax({
+                method: 'GET',
+                url: endpoint,
+                success: function (data) {
+                    console.log("Success: ", data)
+                },
+                error: function (err_data) {
+                    console.log(err_data)
+                }
+            })
+        })
+    </script>
+</html>

@@ -150,3 +150,21 @@
 2019-07-07 00:00:48,978 INFO Refreshing order book for ETH/USD
 2019-07-07 00:00:52,724 INFO Strategy equity is USD 6747.579233 (-5.390084%)
 2019-07-07 00:00:52,725 INFO State has been saved
+2019-07-08 00:00:32,283 INFO Connecting to kraken LIVE platform
+2019-07-08 00:00:32,289 INFO Connected to kraken using KRAKEN_REST_API
+2019-07-08 00:00:32,289 INFO State has been loaded
+2019-07-08 00:00:33,022 INFO Running MA-1-21 strategy on KRAKEN for ETH/USD using initial capital of USD 7132.000000 leverage {1: 1, -1: 2}
+2019-07-08 00:00:46,083 INFO Stance is 1 from [1, -1, -1, -1, 1]
+2019-07-08 00:00:48,868 INFO {'info': {'ZUSD': '13585.4994', 'KFEE': '186069.43', 'XXBT': '0.1582672200', 'XETH': '0.0000000000', 'USDT': '0.00000001'}, 'USD': {'free': 13585.4994, 'used': 0.0, 'total': 13585.4994}, 'KFEE': {'free': 186069.43, 'used': 0.0, 'total': 186069.43}, 'BTC': {'free': 0.15826722, 'used': 0.0, 'total': 0.15826722}, 'ETH': {'free': 0.0, 'used': 0.0, 'total': 0.0}, 'USDT': {'free': 1e-08, 'used': 0.0, 'total': 1e-08}, 'free': {'USD': 13585.4994, 'KFEE': 186069.43, 'BTC': 0.15826722, 'ETH': 0.0, 'USDT': 1e-08}, 'used': {'USD': 0.0, 'KFEE': 0.0, 'BTC': 0.0, 'ETH': 0.0, 'USDT': 0.0}, 'total': {'USD': 13585.4994, 'KFEE': 186069.43, 'BTC': 0.15826722, 'ETH': 0.0, 'USDT': 1e-08}}
+2019-07-08 00:00:49,637 INFO KRAKEN account balance is USD 13585.499400
+2019-07-08 00:00:49,638 INFO Refreshing order book for ETH/USD
+2019-07-08 00:00:53,424 INFO Placing MARKET order for ETH/USD qty 22.000226
+2019-07-08 00:00:57,707 INFO {'id': 'O6AUFC-JZKEN-V3VCJI', 'info': {'error': [], 'result': {'descr': {'order': 'buy 22.00022573 ETHUSD @ market'}, 'txid': ['O6AUFC-JZKEN-V3VCJI']}}, 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'ETH/USD', 'type': 'market', 'side': 'buy', 'price': None, 'amount': 22.000225732486257, 'cost': None, 'average': None, 'filled': None, 'remaining': None, 'status': None, 'fee': None, 'trades': None}
+2019-07-08 00:01:00,870 INFO Order details BEFORE normalising
+2019-07-08 00:01:00,870 INFO {'info': {'id': 'O6AUFC-JZKEN-V3VCJI', 'refid': None, 'userref': 0, 'status': 'closed', 'reason': None, 'opentm': 1562544057.6268, 'closetm': 1562544057.6463, 'starttm': 0, 'expiretm': 0, 'descr': {'pair': 'ETHUSD', 'type': 'buy', 'ordertype': 'market', 'price': '0', 'price2': '0', 'leverage': 'none', 'order': 'buy 22.00022573 ETHUSD @ market', 'close': ''}, 'vol': '22.00022573', 'vol_exec': '22.00022573', 'cost': '6748.99', 'fee': '17.54', 'price': '306.76', 'stopprice': '0.00000', 'limitprice': '0.00000', 'misc': '', 'oflags': 'fciq', 'trades': ['TWN5A7-GPRVE-N65JFM']}, 'id': 'O6AUFC-JZKEN-V3VCJI', 'timestamp': 1562544057000, 'datetime': '2019-07-08T00:00:57.000Z', 'lastTradeTimestamp': None, 'status': 'closed', 'symbol': 'ETH/USD', 'type': 'market', 'side': 'buy', 'price': 306.76, 'cost': 6748.99, 'amount': 22.00022573, 'filled': 22.00022573, 'average': 306.76, 'remaining': 0.0, 'fee': {'cost': 17.54, 'rate': None, 'currency': 'USD'}}
+2019-07-08 00:01:00,871 INFO {'avg_price': 306.76, 'comm': 17.54, 'qty': 22.00022573, 'symbol': 'ETH/USD', 'cost': 6748.7892449348, 'id': 'O6AUFC-JZKEN-V3VCJI', 'side': 'buy', 'status': 'closed'}
+2019-07-08 00:01:01,631 INFO Filled MARKET order for ETH/USD qty 22.00022573 side buy @ 306.76 leverage 1.000000 slippage 0.017933% orderid O6AUFC-JZKEN-V3VCJI cost 6748.789245
+2019-07-08 00:01:06,844 INFO Placed STOP LOSS for ETH/USD qty 22.000226 side sell @ 214.732000 leverage 1.000000 orderid O4X6FE-E6I37-R35FHT
+2019-07-08 00:01:07,572 INFO Strategy equity is USD 6728.829221 (-5.652983%)
+2019-07-08 00:01:07,572 INFO State has been saved
+2019-07-08 00:01:07,573 INFO Done

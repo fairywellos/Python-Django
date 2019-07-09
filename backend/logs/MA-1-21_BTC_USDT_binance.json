@@ -15,12 +15,12 @@
     "qty": 12.144153531246602,
     "entry_price": 8234.95,
     "exit_price": null,
-    "mark_price": 11132.380000000001,
+    "mark_price": 11443.18,
     "cash": -256.5133649445488,
     "currency": "USD",
     "can_trade": true,
     "symbol_trading": "BTC/USDT",
     "exchange": "binance",
-    "equity": 134936.8185232345,
+    "equity": 138711.22144074595,
     "leverage": 1
 }
