@@ -26,7 +26,7 @@ class LiveTableView(APIView):
         logs = Log.objects.all()[a:b]
         # last_ten = Messages.objects.all().order_by('-id')[:11]
         queryset = LogTable(logs)
-        RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
+        RequestConfig(request, paginate={'per_page': 10})
 
         serializer = LogSerializer(queryset, many=True)
         return Response({'serializer': serializer, 'logs': queryset})
