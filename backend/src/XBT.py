@@ -1,4 +1,4 @@
-path = "logs/"
+path = "../../logs/"
 
 ## get equity last line
 today_equity_line = open ( path + "MA-3x_XBTUSD_BitMEX_equity.log" ,"r" ).readlines()[-1].split(",")

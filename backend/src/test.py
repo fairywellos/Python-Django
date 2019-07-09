@@ -1,4 +1,4 @@
-path = "logs/"
+path = "../../logs/"
 
 today_equity_line = open ( path + "Test_BTC_EUR_kraken_equity.log" ,"r" ).readlines()[-1].split(",")
 today_trades_line = open ( path + "Test_BTC_EUR_kraken_trades.log" ,"r" ).readlines()[-1].split("\t")
