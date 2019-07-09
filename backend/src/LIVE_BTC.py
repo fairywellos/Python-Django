@@ -47,6 +47,10 @@ def get_each_LIVE_BTC():
 
     return result
 
+def get_total_LIVE_BTC():
+    len_equity = len(open ( path + "LIVE_MA-1-21_BTC_USD_kraken_equity.log" ,"r" ).readlines())
+    len_trades = len(open ( path + "LIVE_MA-1-21_BTC_USD_kraken_trades.log" ,"r" ).readlines())
+    print(len_equity, len_trades)
 # get_each_info()
 
 # print(date, quantity, entry, last_price, buy_or_sell, returns, equity)
