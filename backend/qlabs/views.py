@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from rest_framework.views import APIView, View
 from rest_framework.response import Response
@@ -67,7 +67,7 @@ def index(request):
 
     if serializer.is_valid():
         serializer.save()
-        return HttpResponse("Created Successfully!")
+        return HttpResponseRedirect(redirect_to="../")
     return HttpResponse("Failed")
 
 # def getData(request):
