@@ -11,3 +11,7 @@ class Log(models.Model):
     buy_or_sell = models.CharField(max_length=255)
     returns = models.CharField(blank=True, max_length=255)
     equity = models.CharField(max_length=255)
+
+class MonthlyLog(models.Model):
+    month = models.CharField(max_length=255)
+    returns = models.CharField(blank=True, max_length=255)

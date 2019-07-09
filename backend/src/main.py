@@ -27,5 +27,19 @@ def get_today():
     }
     return result
 
+# def get_monthly():
+#     result = {
+#         "BCH": get_monthly_BCH(),
+#         "BTC_USD": get_monthly_BTC_USD(),
+#         "BTC_USDT": get_monthly_BTC_USDT(),
+#         "LIVE_BTC": get_monthly_LIVE_BTC(),
+#         "LIVE_ETH": get_monthly_LIVE_ETH(),
+#         "LIVE_LTC": get_monthly_LIVE_LTC(),
+#         "LTC": get_monthly_LTC(),
+#         "XBT": get_monthly_XBT(),
+#         "XMR": get_monthly_XMR(),
+#         "XRP": get_monthly_XRP(),
+#         "TEST_BTC_EUR": get_monthly_Test_BTC(),
+
 # result = get_today()
 # print (result)

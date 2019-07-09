@@ -6,43 +6,73 @@ from rest_framework.renderers import TemplateHTMLRenderer
 from src.main import get_today
 import re
 
-from .serializers import LogSerializer
-from .models import Log
+from .serializers import LogSerializer, MonthlyLogSerializer
+from .models import Log, MonthlyLog
 
-from .tables import LogTable
+from .tables import LogTable, MonthlyLogTable
 from django_tables2 import RequestConfig, MultiTableMixin
 from django.views.generic.base import TemplateView
 
 
-# class LogList(APIView):
-#     renderer_classes = [TemplateHTMLRenderer]
-#     template_name = 'log_list.html'
+class LiveTableView(APIView):
+    renderer_classes = [TemplateHTMLRenderer]
+    template_name = 'live_today.html'
 
-#     def get(self, request, format=None):
-#         logs = Log.objects.order_by('-id')
+    def get(self, request, format=None):
+        length = len(Log.objects.all())
+        print (length)
+        a = int(length) - 8
+        b = int(length) - 5
+        logs = Log.objects.all()[a:b]
+        # last_ten = Messages.objects.all().order_by('-id')[:11]
+        queryset = LogTable(logs)
+        RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
 
-#         queryset = LogTable(logs)
-#         RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
+        serializer = LogSerializer(queryset, many=True)
+        return Response({'serializer': serializer, 'logs': queryset})
 
-#         serializer = LogSerializer(queryset, many=True)
-#         return Response({'serializer': serializer, 'logs': queryset})
+class TestTableView(APIView):
+    renderer_classes = [TemplateHTMLRenderer]
+    template_name = 'test_today.html'
 
-class LogTablesView(MultiTableMixin, TemplateView):
-    print("I'm in LogTables")
-    template_name = "log_list.html"
+    def get(self, request, format=None):
+        logs = Log.objects.exclude(strategy="LIVE_MA-1-21_LTC_USD").exclude(strategy="LIVE_MA-1-21_ETH_USD").exclude(strategy="LIVE_MA-1-21_BTC_USD")
 
-    logs_live = Log.objects.exclude(strategy="MA-1-21_BCH_USD").exclude(strategy="MA-1-21_BTC_USD").exclude(strategy="MA-1-21_BTC_USDT").exclude(strategy="MA-1-21_LTC_USD").exclude(strategy="MA-1-21_XMR_USD").exclude(strategy="MA-1-21_XRP_USD").exclude(strategy="MA-3x_XBTUSD").exclude(strategy="Test_BTC_EUR").order_by('-id')
+        queryset = LogTable(logs)
+        RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
 
-    logs_test = Log.objects.exclude(strategy="LIVE_MA-1-21_LTC_USD").exclude(strategy="LIVE_MA-1-21_ETH_USD").exclude(strategy="LIVE_MA-1-21_BTC_USD").order_by('-id')
+        serializer = LogSerializer(queryset, many=True)
+        return Response({'serializer': serializer, 'logs': queryset})
 
-    table_pagination = {
-        'per_page': 10
-    }
+class MonthlyTableView(APIView):
+    renderer_classes = [TemplateHTMLRenderer]
+    template_name = 'monthly.html'
 
-    tables = [
-        LogTable(logs_live, exclude=("id", )),
-        LogTable(logs_test, exclude=("id", ))
-    ]
+    def get(self, request, format=None):
+        logs = MonthlyLog.objects.all()
+
+        queryset = MonthlyLogTable(logs)
+        RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
+
+        serializer = MonthlyLogSerializer(queryset, many=True)
+        return Response({'serializer': serializer, 'logs': queryset})
+
+# class LogTablesView(MultiTableMixin, TemplateView):
+#     print("I'm in LogTables")
+#     template_name = "log_list.html"
+
+#     logs_live = Log.objects.exclude(strategy="MA-1-21_BCH_USD").exclude(strategy="MA-1-21_BTC_USD").exclude(strategy="MA-1-21_BTC_USDT").exclude(strategy="MA-1-21_LTC_USD").exclude(strategy="MA-1-21_XMR_USD").exclude(strategy="MA-1-21_XRP_USD").exclude(strategy="MA-3x_XBTUSD").exclude(strategy="Test_BTC_EUR").order_by('-id')
+
+#     logs_test = Log.objects.exclude(strategy="LIVE_MA-1-21_LTC_USD").exclude(strategy="LIVE_MA-1-21_ETH_USD").exclude(strategy="LIVE_MA-1-21_BTC_USD").order_by('-id')
+
+#     table_pagination = {
+#         'per_page': 10
+#     }
+
+#     tables = [
+#         LogTable(logs_live, exclude=("id", )),
+#         LogTable(logs_test, exclude=("id", ))
+#     ]
 
 class ChartView(View):
     def get(self, request, *args, **kwargs):
@@ -69,7 +99,7 @@ def index(request):
 
     if serializer.is_valid():
         serializer.save()
-        return HttpResponseRedirect(redirect_to="log_table")
+        return HttpResponseRedirect(redirect_to="live")
     return HttpResponse("Failed")
 
 # def getData(request):

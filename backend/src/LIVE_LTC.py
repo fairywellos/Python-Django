@@ -17,6 +17,11 @@ equity = ""
 ## get each info
 def get_each_LIVE_LTC():
     date = today_equity_line[0].split(" ")[0]
+
+    import datetime
+    formated_date = datetime.datetime.strptime(date, "%Y-%d-%m")
+    str_date = formated_date.strftime("%m-%d-%Y")
+    date = str_date
     quantity = today_equity_line[1].replace(" ", "")
     entry = today_equity_line[2].replace(" ", "")
 
