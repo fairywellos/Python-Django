@@ -25,6 +25,7 @@ def get_each_Test_BTC():
             print(last_start_date)
     import datetime
     date = last_start_date
+    current_date = today_trades_line[0].split(" ")[0]
     formated_date = datetime.datetime.strptime(date, "%Y-%m-%d")
     str_date = formated_date.strftime("%m-%d-%Y")
     date = str_date
@@ -48,6 +49,7 @@ def get_each_Test_BTC():
     result = {
         "strategy": strategy,
         "date": date,
+        "current_date": current_date,
         "quantity": quantity,
         "entry": entry,
         "last_price": last_price,
@@ -67,11 +69,11 @@ def get_monthly_Test_BTC():
         returns_value = ""
     for line in total_trades:
         line_date = line.split("\t")[0].split(" ")[0]
-        if len(line.split("\t")) > 2:
-            returns_value = line.split("\t")[3].replace("\n", "")
-        else:
-            returns_value = ""
-            returns_date = line.split("\t")[0].split(" ")[0]
+        # if len(line.split("\t")) > 2:
+        #     returns_value = line.split("\t")[3].replace("\n", "")
+        # else:
+        #     returns_value = ""
+        #     returns_date = line.split("\t")[0].split(" ")[0]
         if line_date[8] == '3':
             returns_date = line.split("\t")[0].split(" ")[0]
             if len(line.split("\t")) > 2:

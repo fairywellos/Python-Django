@@ -29,6 +29,7 @@ def get_each_LIVE_ETH():
     formated_date = datetime.datetime.strptime(date, "%Y-%m-%d")
     str_date = formated_date.strftime("%m-%d-%Y")
     date = str_date
+    current_date = today_trades_line[0].split(" ")[0]
     quantity = today_equity_line[1].replace(" ", "")
     entry = today_equity_line[2].replace(" ", "")
 
@@ -48,6 +49,7 @@ def get_each_LIVE_ETH():
     result = {
         "strategy": strategy,
         "date": date,
+        "current_date": current_date,
         "quantity": quantity,
         "entry": entry,
         "last_price": last_price,
@@ -70,13 +72,13 @@ def get_monthly_LIVE_ETH():
         returns_value = ""
     for line in total_trades:
         line_date = line.split("\t")[0].split(" ")[0]
-        if len(line.split("\t")) > 2:
-            returns_value = line.split("\t")[3].replace("\n", "")
-        else:
-            returns_value = ""
-            returns_date = line.split("\t")[0].split(" ")[0]
+        # if len(line.split("\t")) > 2:
+        #     returns_value = line.split("\t")[3].replace("\n", "")
+        # else:
+        #     returns_value = ""
+        #     returns_date = line.split("\t")[0].split(" ")[0]
         if line_date[8] == '3':
-            returns_date = line.split("\t")[0].split(" ")[0]
+            returns_date = line_date
             if len(line.split("\t")) > 2:
                 returns_value = line.split("\t")[3].replace("\n", "")
             else:

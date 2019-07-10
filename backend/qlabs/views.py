@@ -37,7 +37,10 @@ class TestTableView(APIView):
 
     def get(self, request, format=None):
         logs = Log.objects.exclude(strategy="LIVE_MA-1-21_LTC_USD").exclude(strategy="LIVE_MA-1-21_ETH_USD").exclude(strategy="LIVE_MA-1-21_BTC_USD")
-        queryset = LogTable(logs)
+        logs_num = logs.count()
+        queryset = LogTable(logs.all()[logs_num-8:logs_num])
+        print("***************************")
+        print(logs[0])
         RequestConfig(request, paginate={'per_page': 20}).configure(queryset)
 
         serializer = LogSerializer(queryset, many=True)
@@ -50,7 +53,7 @@ class MonthlyTableView(APIView):
     def get(self, request, format=None):
         logs = MonthlyLog.objects.all()
         queryset = MonthlyLogTable(logs)
-        RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
+        RequestConfig(request, paginate={'per_page': 15}).configure(queryset)
 
         serializer = MonthlyLogSerializer(queryset, many=True)
         return Response({'serializer': serializer, 'logs': queryset})
@@ -81,7 +84,7 @@ class ChartData(APIView):
     permission_classes = []
 
     def get(self, request, format=None):
-        logs = Log.objects.order_by('date').values()
+        logs = Log.objects.order_by('current_date').values()
         filtered_logs = []
         for v in logs:
             if re.match('^LIVE', v['strategy']):

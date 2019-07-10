@@ -5,6 +5,7 @@ from django.db import models
 class Log(models.Model):
     strategy = models.CharField(max_length=255)
     date = models.CharField(max_length=255)
+    current_date = models.CharField(max_length=255, default="")
     quantity = models.CharField(max_length=255)
     entry = models.CharField(max_length=255)
     last_price = models.CharField(blank=True, max_length=255)

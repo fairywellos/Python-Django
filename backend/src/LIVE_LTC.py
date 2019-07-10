@@ -26,6 +26,9 @@ def get_each_LIVE_LTC():
             print(last_start_date)
     import datetime
     date = last_start_date
+    ## same as the current date of LIVE LTC
+    tmp = open ( path + "LIVE_MA-1-21_ETH_USD_kraken_trades.log" ,"r" ).readlines()[-1].split("\t")
+    current_date = tmp[0].split(" ")[0]
     formated_date = datetime.datetime.strptime(date, "%Y-%m-%d")
     str_date = formated_date.strftime("%m-%d-%Y")
     date = str_date
@@ -48,6 +51,7 @@ def get_each_LIVE_LTC():
     result = {
         "strategy": strategy,
         "date": date,
+        "current_date": current_date,
         "quantity": quantity,
         "entry": entry,
         "last_price": last_price,
@@ -70,11 +74,11 @@ def get_monthly_LIVE_LTC():
         returns_value = ""
     for line in total_trades:
         line_date = line.split("\t")[0].split(" ")[0]
-        if len(line.split("\t")) > 2:
-            returns_value = line.split("\t")[3].replace("\n", "")
-        else:
-            returns_value = ""
-            returns_date = line.split("\t")[0].split(" ")[0]
+        # if len(line.split("\t")) > 2:
+        #     returns_value = line.split("\t")[3].replace("\n", "")
+        # else:
+        #     returns_value = ""
+        #     returns_date = line.split("\t")[0].split(" ")[0]
         if line_date[8] == '3':
             returns_date = line.split("\t")[0].split(" ")[0]
             if len(line.split("\t")) > 2:
