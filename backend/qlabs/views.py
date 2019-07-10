@@ -41,7 +41,7 @@ class TestTableView(APIView):
         queryset = LogTable(logs.all()[logs_num-8:logs_num])
         print("***************************")
         print(logs[0])
-        RequestConfig(request, paginate={'per_page': 20}).configure(queryset)
+        RequestConfig(request, paginate={'per_page': 20})
 
         serializer = LogSerializer(queryset, many=True)
         return Response({'serializer': serializer, 'logs': queryset})
