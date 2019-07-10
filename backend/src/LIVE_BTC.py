@@ -59,10 +59,37 @@ def get_each_LIVE_BTC():
 
     return result
 
-def get_total_LIVE_BTC():
-    len_equity = len(open ( path + "LIVE_MA-1-21_BTC_USD_kraken_equity.log" ,"r" ).readlines())
-    len_trades = len(open ( path + "LIVE_MA-1-21_BTC_USD_kraken_trades.log" ,"r" ).readlines())
-    print(len_equity, len_trades)
+# def get_total_LIVE_BTC():
+#     len_equity = len(open ( path + "LIVE_MA-1-21_BTC_USD_kraken_equity.log" ,"r" ).readlines())
+#     len_trades = len(open ( path + "LIVE_MA-1-21_BTC_USD_kraken_trades.log" ,"r" ).readlines())
+#     print(len_equity, len_trades)
 # get_each_info()
 
 # print(date, quantity, entry, last_price, buy_or_sell, returns, equity)
+
+def get_monthly_LIVE_BTC():
+    total_trades = open ( path + "LIVE_MA-1-21_BTC_USD_kraken_trades.log" ,"r" ).readlines()
+    returns_date = total_trades[0].split("\t")[0].split(" ")[0]
+    if len(total_trades[0].split("\t")) > 2:
+        returns_value = total_trades[0].split("\t")[3].replace("\n", "")
+    else:
+        returns_value = ""
+    for line in total_trades:
+        line_date = line.split("\t")[0].split(" ")[0]
+        if len(line.split("\t")) > 2:
+            returns_value = line.split("\t")[3].replace("\n", "")
+        else:
+            returns_value = ""
+            returns_date = line.split("\t")[0].split(" ")[0]
+        if line_date[8] == '3':
+            returns_date = line.split("\t")[0].split(" ")[0]
+            if len(line.split("\t")) > 2:
+                returns_value = line.split("\t")[3].replace("\n", "")
+            else:
+                returns_value = ""
+    print(returns_date, returns_value)
+    return {
+        "strategy": strategy,
+        "month": returns_date,
+        "returns": returns_value,
+    }

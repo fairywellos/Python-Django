@@ -9,6 +9,7 @@ urlpatterns = [
     path('test', views.TestTableView.as_view()),
     path('monthly', views.MonthlyTableView.as_view()),
     path('add', views.index),
+    path('save_monthly', views.save_monthly),
     path('chart', views.ChartView.as_view(), name='Chart'),
     path('chart_data', views.ChartData.as_view()),
 ]

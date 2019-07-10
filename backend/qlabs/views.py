@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework.views import APIView, View
 from rest_framework.response import Response
 from rest_framework.renderers import TemplateHTMLRenderer
-from src.main import get_today
+from src.main import get_today, get_monthly
 import re
 
 from .serializers import LogSerializer, MonthlyLogSerializer
@@ -37,7 +37,6 @@ class TestTableView(APIView):
 
     def get(self, request, format=None):
         logs = Log.objects.exclude(strategy="LIVE_MA-1-21_LTC_USD").exclude(strategy="LIVE_MA-1-21_ETH_USD").exclude(strategy="LIVE_MA-1-21_BTC_USD")
-
         queryset = LogTable(logs)
         RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
 
@@ -50,7 +49,6 @@ class MonthlyTableView(APIView):
 
     def get(self, request, format=None):
         logs = MonthlyLog.objects.all()
-
         queryset = MonthlyLogTable(logs)
         RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
 
@@ -91,9 +89,22 @@ class ChartData(APIView):
 
         return Response(filtered_logs)
 
+def save_monthly(request):
+    result_m = get_monthly()
+    list_m_values = [ v for v in result_m.values() ]
+    print(list_m_values)
+    serializer = MonthlyLogSerializer(data=list_m_values, many=True)
+
+    if serializer.is_valid():
+        serializer.save()
+        return HttpResponseRedirect(redirect_to="live")
+    return HttpResponse("Failed")
+
 def index(request):
     result = get_today()
     list_values = [ v for v in result.values() ]
+    result_m = get_monthly()
+    list_m_values = [ v for v in result_m.values() ]
     print(list_values)
     serializer = LogSerializer(data=list_values, many=True)
 

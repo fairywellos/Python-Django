@@ -9,4 +9,4 @@ class LogSerializer(serializers.ModelSerializer):
 class MonthlyLogSerializer(serializers.ModelSerializer):
     class Meta:
         model = MonthlyLog
-        fields = ('date', 'returns')
+        fields = ('strategy', 'month', 'returns')

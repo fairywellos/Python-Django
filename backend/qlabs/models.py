@@ -13,5 +13,6 @@ class Log(models.Model):
     equity = models.CharField(max_length=255)
 
 class MonthlyLog(models.Model):
+    strategy = models.CharField(default="", max_length=255)
     month = models.CharField(max_length=255)
     returns = models.CharField(blank=True, max_length=255)
