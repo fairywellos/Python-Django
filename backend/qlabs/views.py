@@ -38,7 +38,7 @@ class TestTableView(APIView):
     def get(self, request, format=None):
         logs = Log.objects.exclude(strategy="LIVE_MA-1-21_LTC_USD").exclude(strategy="LIVE_MA-1-21_ETH_USD").exclude(strategy="LIVE_MA-1-21_BTC_USD")
         queryset = LogTable(logs)
-        RequestConfig(request, paginate={'per_page': 10}).configure(queryset)
+        RequestConfig(request, paginate={'per_page': 20}).configure(queryset)
 
         serializer = LogSerializer(queryset, many=True)
         return Response({'serializer': serializer, 'logs': queryset})
@@ -103,8 +103,6 @@ def save_monthly(request):
 def index(request):
     result = get_today()
     list_values = [ v for v in result.values() ]
-    result_m = get_monthly()
-    list_m_values = [ v for v in result_m.values() ]
     print(list_values)
     serializer = LogSerializer(data=list_values, many=True)
 
