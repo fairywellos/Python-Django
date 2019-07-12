@@ -1,8 +1,6 @@
 
 path = "../../logs/"
 
-from .common import temp
-
 ## get equity last line
 today_equity_line = open ( path + "MA-1-21_BCH_USD_kraken_equity.log" ,"r" ).readlines()[-1].split(",")
 today_trades_line = open ( path + "MA-1-21_BCH_USD_kraken_trades.log" ,"r" ).readlines()[-1].split("\t")
@@ -16,7 +14,6 @@ last_price = ""
 buy_or_sell = ""
 returns = ""
 equity = ""
-
 
 ## get each info
 def get_each_BCH():
