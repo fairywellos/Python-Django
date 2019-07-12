@@ -1,7 +1,7 @@
 
 path = "../../logs/"
 
-from .common import temp
+# from .common import temp
 
 ## get equity last line
 today_equity_line = open ( path + "MA-1-21_BCH_USD_kraken_equity.log" ,"r" ).readlines()[-1].split(",")
